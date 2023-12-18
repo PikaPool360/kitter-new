@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792311804098",
+    "project_id": "kitter-cc369",
+    "storage_bucket": "kitter-cc369.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792311804098:android:8bd62248435697af2e8b5b",
+        "android_client_info": {
+          "package_name": "com.example.kitter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdu5Nk17SQHKn1rMzbg0eOCMCEsrZfgj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
