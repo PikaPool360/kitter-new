@@ -49,27 +49,4 @@ class FirestoreDatabase {
 
     return postsStream;
   }
-
-  StreamSubscription<QuerySnapshot>? postSubscription;
-
-  void listenToPosts() {
-    postSubscription = getPostsStream().listen((QuerySnapshot snapshot) {
-      // Access the documents in the snapshot
-      print("Got response");
-      for (QueryDocumentSnapshot doc in snapshot.docs) {
-        // Access the data in each document
-        Map<String, dynamic> data = doc.data() as Map<String, dynamic>;
-
-        // Verify the value (replace 'fieldName' with the actual field name)
-        dynamic fieldValue = data['PostMessage'];
-
-        print("Field value is $fieldValue");
-      }
-    });
-  }
-
-// Call this method to start listening to the stream
-  void startListening() {
-    listenToPosts();
-  }
 }
